@@ -10,10 +10,11 @@ conexion = psycopg2.connect(
 try:
     with conexion:
         with conexion.cursor() as cursor:
-            sentencia = 'SELECT * FROM persona WHERE id_persona = %s'
-            #id_persona = input('Digite un número para el id_persona: ')
-            cursor.execute(sentencia)
-            registros = cursor.fetchone()
+            sentencia = 'SELECT * FROM persona WHERE id_persona IN %s'
+            entrada = input('Digite los id_persona a buscar (separados por coma): ')
+            llaves_primarias = (tuple(entrada.split(', ')),)
+            cursor.execute(sentencia, llaves_primarias)
+            registros = cursor.fetchall()
             for registro in registros:
                 print(registros)
 except Exception as e:
