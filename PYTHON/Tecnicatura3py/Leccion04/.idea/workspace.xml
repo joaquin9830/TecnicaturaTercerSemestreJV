@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a659c5dc-538f-42b0-9336-14ba32099183" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/BD/prueba-bd.py" beforeDir="false" afterPath="$PROJECT_DIR$/BD/prueba-bd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Leccion04.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Leccion04.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,9 +17,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2hgzErIm98YGkmQgIPAt0h6LzA1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,8 +30,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "S:/FACULTAD 2024 TERCER SEMESTRE/TecnicaturaTercerSemestreJV/PYTHON/Tecnicatura3py/Leccion04/BD",
-    "settings.editor.selected.configurable": "configurable.group.build"
+    "last_opened_file_path": "S:/FACULTAD 2024 TERCER SEMESTRE/TecnicaturaTercerSemestreJV/PYTHON/Tecnicatura3py/Leccion04",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
