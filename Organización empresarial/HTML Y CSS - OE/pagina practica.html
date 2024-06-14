@@ -205,70 +205,80 @@
         </div>
     </section>
     <center>
-        <section>
-            <h2>Formulario de contacto</h2>
-            <form method="post" action="/">
-                <fieldset>
-                    <legend>Información Personal</legend>
-                    <label for="text">Nombre:</label>
-                    <input id="text" type="text" placeholder="Escribe tu nombre" value="" required>
-                    <br><br>
-                    <label for="email">E-mail:</label>
-                    <input id="email" type="email" placeholder="Escribe tu e-mail" value="" required>
-                    <br><br>
-                    <label for="pass">Contraseña:</label>
-                    <input id="pass" type="password" placeholder="Escribe tu contraseña" value="" required>
-                    <br><br>
-                    <label for="number">Número de contacto:</label>
-                    <input id="number" type="number" placeholder="Número" value="10" min="0" max="3" required>
-                    <br><br>
-                    <label>Opción:</label>
-                    <select>
-                        <option>Opción 1</option>
-                        <option>Opción 2</option>
-                        <option>Opción 3</option>
-                    </select>
-                    <br><br>
-                    <input type="radio" id="blanco" name="color" checked><label for="blanco">Blanco</label>
-                    <input type="radio" id="negro" name="color"><label for="negro">Negro</label>
-                    <br><br>
-                    <label>Fecha:
-                        <input type="datetime-local" name="fecha" placeholder="dd/mm/yyyy" required>
-                    </label>
-                    <br><br>
-                    <input type="submit" value="Enviar Formulario">
-                </fieldset>
-                <fieldset>
-                    <legend>Información Adicional</legend>
-                    <label>IG:
-                        <input type="text" name="ig" placeholder="https://www.instagram.com/marianela_purretta/">
-                    </label>
-                </fieldset>
-            </form>
+        <section class="contact-form-section">
+            <div class="form-container">
+                <h2>Formulario de contacto</h2>
+                <form id="contactForm" method="post" action="/">
+                    <fieldset>
+                        <legend>Información Personal</legend>
+                        <label for="name">Nombre:</label>
+                        <input id="name" name="name" type="text" placeholder="Escribe tu nombre" required>
+                        <br><br>
+                        <label for="email">E-mail:</label>
+                        <input id="email" name="email" type="email" placeholder="Escribe tu e-mail" required>
+                        <br><br>
+                        <label for="password">Contraseña:</label>
+                        <input id="password" name="password" type="password" placeholder="Escribe tu contraseña" required>
+                        <br><br>
+                        <label for="contactNumber">Número de contacto:</label>
+                        <input id="contactNumber" name="contactNumber" type="tel" placeholder="Número de contacto" required pattern="[0-9]{10}">
+                        <br><br>
+                        <label for="option">Opción:</label>
+                        <select id="option" name="option" required>
+                            <option value="1">Opción 1</option>
+                            <option value="2">Opción 2</option>
+                            <option value="3">Opción 3</option>
+                        </select>
+                        <br><br>
+                        <input type="radio" id="blanco" name="color" value="Blanco" checked><label for="blanco">Blanco</label>
+                        <input type="radio" id="negro" name="color" value="Negro"><label for="negro">Negro</label>
+                        <br><br>
+                        <label for="fecha">Fecha:</label>
+                        <input id="fecha" type="datetime-local" name="fecha" required>
+                        <br><br>
+                        <div>
+                            <label for="why">Por qué quieres contactar?:</label>
+                            <select name="why" id="why" required>
+                                <option value="1">Trabajo</option>
+                                <option value="2">Duda</option>
+                                <option value="3">Info</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="terms">Términos y condiciones</label>
+                            <input type="checkbox" id="terms" name="terms" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label>Con qué programa quieres trabajar?
+                                <input list="programa" name="programa" required>
+                            </label>
+                            <datalist id="programa">
+                                <option value="LIGHTROOM"></option>
+                                <option value="PHOTOSHOP"></option>
+                                <option value="PREMIERE"></option>
+                            </datalist>
+                        </div>
+                        <br><br>
+                        <p>Por favor, asegúrate de que todos los campos estén completos antes de enviar el formulario.</p>
+                        <input type="submit" value="Enviar Formulario">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Información Adicional</legend>
+                        <label for="ig">Instagram:</label>
+                        <input id="ig" type="url" name="ig" placeholder="https://www.instagram.com/tu_usuario/" pattern="https://.*">
+                    </fieldset>
+                </form>
+            </div>
         </section>
     </center>
-    <div>
-        <label for="why">Por qué quieres contactar?:</label>
-        <select name="why" id="why">
-            <option value="1">Trabajo</option>
-            <option value="2">Duda</option>
-            <option value="3">Info</option>
-        </select>
-    </div>
-    <div>
-        <label for="terms">Términos y condiciones</label>
-        <input type="checkbox" id="terms" name="terms" required>
-    </div>
-    <div>
-        <label>Con qué programa quieres trabajar?
-            <input list="programa" name="programa">
-        </label>
-        <datalist id="programa">
-            <option value="LIGHTROOM"></option>
-            <option value="PHOTOSHOP"></option>
-            <option value="PREMIERE"></option>
-        </datalist>
-    </div>
+    
+    
+    
+
+
+   
 
 
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2d2d31">
@@ -300,6 +310,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
 
 </body>

@@ -237,6 +237,77 @@ progress {
   to { width: 100%; }
 }
 
+/*Fin de sección habilidades*/
+
+/*Sección contacto*/
+.contact-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form-container {
+  background-color: #131212; /* Fondo oscuro para el contenedor */
+  color: #fff; /* Texto blanco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.form-container h2 {
+  color: #fff; /* Texto blanco para el encabezado */
+}
+
+.form-container fieldset {
+  border: 1px solid #fff; /* Bordes blancos para el fieldset */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.form-container legend {
+  color: #fff; /* Texto blanco para el legend */
+}
+
+.form-container label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="number"],
+.form-container input[type="datetime-local"],
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.form-container input[type="radio"] {
+  margin: 0 5px 0 15px;
+}
+
+.form-container input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #45a049;
+}
 
 
 #audio-button {
