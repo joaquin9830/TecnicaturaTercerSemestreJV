@@ -1,9 +1,10 @@
-*{
-  font-family: 'Poppins', sans-serif; 
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
-#Conocenos , h1 {
-  color: #ffffff; 
+#Conocenos,
+h1 {
+  color: #ffffff;
   text-align: center;
 }
 
@@ -127,25 +128,85 @@ nav {
 
 @media screen and (min-width: 768px) {
   section {
-      padding: 1em 7em;
+    padding: 1em 7em;
   }
 }
 
 @media screen and (min-width: 992px) {
   section {
-      padding: 1em;
+    padding: 1em;
   }
+
   .card {
-      padding: 5em 1em;
+    padding: 5em 1em;
   }
+
   .column {
-      flex: 0 0 33.33%;
-      max-width: 33.33%;
-      padding: 0 1em;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 1em;
   }
 }
 
 /*Fin sección conocenos*/
+
+.about-us-section {
+  text-align: center;
+
+
+  padding: 40px 20px;
+  color: #fdf8f8;
+  /* Color del texto */
+}
+
+.about-us-section h2 {
+  color: #fff3f3;
+  /* Color del texto del encabezado */
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.about-us-section p {
+  margin-bottom: 40px;
+  font-size: 18px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pillars-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pillar {
+  background-color: #fff;
+  /* Fondo blanco para las cajas */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 250px;
+  flex: 1 1 250px;
+  margin: 10px;
+}
+
+.pillar h3 {
+  color: #333;
+  /* Color del texto del encabezado de las cajas */
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.pillar p {
+  color: #666;
+  /* Color del texto del párrafo de las cajas */
+  font-size: 16px;
+}
+
 /*Seccción habilidades*/
 /* Estilos generales */
 .container {
@@ -166,7 +227,7 @@ nav {
 
 #Habilidades {
   text-align: center;
-  color:#ffffff
+  color: #ffffff
 }
 
 /* Estilos para las habilidades */
@@ -182,7 +243,7 @@ nav {
   flex: 1;
   text-align: left;
   font-weight: 600;
-  color:#fff
+  color: #fff
 }
 
 .skill i {
@@ -228,13 +289,23 @@ progress {
 }
 
 @-webkit-keyframes progress-animation {
-  from { width: 0%; }
-  to { width: 100%; }
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes progress-animation {
-  from { width: 0%; }
-  to { width: 100%; }
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 /*Fin de sección habilidades*/
@@ -248,8 +319,10 @@ progress {
 }
 
 .form-container {
-  background-color: #131212; /* Fondo oscuro para el contenedor */
-  color: #fff; /* Texto blanco */
+  background-color: #131212;
+  /* Fondo oscuro para el contenedor */
+  color: #fff;
+  /* Texto blanco */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -259,18 +332,21 @@ progress {
 }
 
 .form-container h2 {
-  color: #fff; /* Texto blanco para el encabezado */
+  color: #fff;
+  /* Texto blanco para el encabezado */
 }
 
 .form-container fieldset {
-  border: 1px solid #fff; /* Bordes blancos para el fieldset */
+  border: 1px solid #fff;
+  /* Bordes blancos para el fieldset */
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 10px;
 }
 
 .form-container legend {
-  color: #fff; /* Texto blanco para el legend */
+  color: #fff;
+  /* Texto blanco para el legend */
 }
 
 .form-container label {
@@ -387,7 +463,7 @@ figure iframe {
   display: flex;
   flex-direction: column;
   text-align: center;
-  
+
 }
 
 #footer p {
@@ -403,19 +479,21 @@ i {
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
-      transform: translateY(-20px);
+    opacity: 0;
+    transform: translateY(-20px);
   }
+
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 @media (max-width: 768px) {
+
   figure img,
   figure audio,
   figure iframe {
-      width: 100%;
+    width: 100%;
   }
 }
