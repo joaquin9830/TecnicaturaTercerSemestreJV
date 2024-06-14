@@ -84,7 +84,7 @@ nav {
   .card .img-container {
     width: 8em;
     height: 8em;
-    background-color: #a993ff;
+    background-color: #314114;
     padding: 0.5em;
     border-radius: 50%;
     margin: 0 auto 2em auto;
@@ -115,7 +115,7 @@ nav {
     font-size: 1.4em;
   }
   .card:hover {
-    background: linear-gradient(#6045ea, #8567f7);
+    background: linear-gradient(#347e22, #226e13);
     color: #ffffff;
   }
   .card:hover .img-container {
