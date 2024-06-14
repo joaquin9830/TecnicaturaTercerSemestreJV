@@ -53,16 +53,19 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#Habilidades">Habilidades</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contacto">Contacto</a>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Redes
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="#"><i class="bi bi-envelope-check-fill"></i></a>
+                                    <li><a class="dropdown-item" href="mailto:juniortechtroopers@gmail.com" target="_blank"><i class="bi bi-envelope-check-fill"></i></a>
                                     </li>
                                     <li><a class="dropdown-item"
-                                            href="https://github.com/CodeStrong2023/JuniorTechTropersTercerSem2024"><i
+                                            href="https://github.com/CodeStrong2023/JuniorTechTropersTercerSem2024" target="_blank"><i
                                                 class="bi bi-github"></i></a></li>
                                     <li>
                                         <hr class="dropdown-divider">
@@ -205,7 +208,7 @@
         </div>
     </section>
     <center>
-        <section class="contact-form-section">
+        <section class="contact-form-section" id="Contacto">
             <div class="form-container">
                 <h2>Formulario de contacto</h2>
                 <form id="contactForm" method="post" action="/">
@@ -218,10 +221,12 @@
                         <input id="email" name="email" type="email" placeholder="Escribe tu e-mail" required>
                         <br><br>
                         <label for="password">Contraseña:</label>
-                        <input id="password" name="password" type="password" placeholder="Escribe tu contraseña" required>
+                        <input id="password" name="password" type="password" placeholder="Escribe tu contraseña"
+                            required>
                         <br><br>
                         <label for="contactNumber">Número de contacto:</label>
-                        <input id="contactNumber" name="contactNumber" type="tel" placeholder="Número de contacto" required pattern="[0-9]{10}">
+                        <input id="contactNumber" name="contactNumber" type="tel" placeholder="Número de contacto"
+                            required pattern="[0-9]{10}">
                         <br><br>
                         <label for="option">Opción:</label>
                         <select id="option" name="option" required>
@@ -230,7 +235,8 @@
                             <option value="3">Opción 3</option>
                         </select>
                         <br><br>
-                        <input type="radio" id="blanco" name="color" value="Blanco" checked><label for="blanco">Blanco</label>
+                        <input type="radio" id="blanco" name="color" value="Blanco" checked><label
+                            for="blanco">Blanco</label>
                         <input type="radio" id="negro" name="color" value="Negro"><label for="negro">Negro</label>
                         <br><br>
                         <label for="fecha">Fecha:</label>
@@ -261,24 +267,26 @@
                             </datalist>
                         </div>
                         <br><br>
-                        <p>Por favor, asegúrate de que todos los campos estén completos antes de enviar el formulario.</p>
+                        <p>Por favor, asegúrate de que todos los campos estén completos antes de enviar el formulario.
+                        </p>
                         <input type="submit" value="Enviar Formulario">
                     </fieldset>
                     <fieldset>
                         <legend>Información Adicional</legend>
                         <label for="ig">Instagram:</label>
-                        <input id="ig" type="url" name="ig" placeholder="https://www.instagram.com/tu_usuario/" pattern="https://.*">
+                        <input id="ig" type="url" name="ig" placeholder="https://www.instagram.com/tu_usuario/"
+                            pattern="https://.*">
                     </fieldset>
                 </form>
             </div>
         </section>
     </center>
-    
-    
-    
 
 
-   
+
+
+
+
 
 
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2d2d31">
