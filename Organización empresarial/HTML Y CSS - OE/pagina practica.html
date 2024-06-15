@@ -10,7 +10,6 @@
     <link rel="icon" href="/Clase 6/img/icono.jpeg">
     <!--style css-->
     <link rel="stylesheet" href="styles.css">
-
     <!--Google fonts links-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,6 +53,9 @@
                                 <a class="nav-link" href="#Habilidades">Habilidades</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="#Projects">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="#Contacto">Contacto</a>
                             </li>
                             <li class="nav-item dropdown">
@@ -92,6 +94,7 @@
             <a href="#Conocenos" class="btn btn-success">Conócenos</a>
         </div>
     </section>
+    <!--Acerca de nosotros-->
     <section id="Conocenos">
         <h1>Nuestro equipo</h1>
 
@@ -194,7 +197,7 @@
             </div>
         </div>
     </section>
-
+    <!--Habilidades-->
     <section id="Habilidades">
         <div class="container">
             <div class="white-box">
@@ -230,6 +233,44 @@
             </div>
         </div>
     </section>
+    
+    <!--Proyectos-->
+    <section id="Projects" class="projects-section">
+        <h1>Proyectos</h1>
+        <div class="projects-container">
+            <div class="project-box">
+                <img src="img/Proyectos/Trooper.png" alt="Proyecto 1">
+                <div class="project-info">
+                    <h3>Trooper Stay Java</h3>
+                    <p class="description">Sistema de estadías. Tecnlogías utilizadas:
+                        Java | MySQL | JoptionPane | JoptionPanel
+                    </p>
+                    <<a href="https://github.com/CodeStrong2023/ProyectoJuniorTechTroopers" class="learn-more" target="_blank"><button class="btn btn-dark">Saber más</button></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="img/Proyectos/TrooperPython.png" alt="Proyecto 2">
+                <div class="project-info">
+                    <h3>Trooper Stay Python</h3>
+                    <p class="description">Aplicación de hospedajes. 
+                        Tecnologías utilizadas: Python | MySQL | TKinter </p>
+                    <a href="https://github.com/CodeStrong2023/ProyectoPythonJuniorTechTroopers" class="learn-more" target="_blank"><button class="btn btn-dark">Saber más</button></a>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="img/Proyectos/ChatBot.png" alt="Proyecto 3">
+                <div class="project-info">
+                    <h3>Chat bot</h3>
+                    <p class="description">Asistente virtual. Tecnologías
+                        utilizadas: React | Node.js | MongoDB | JavaScript | Geminis</p>
+                    </p>
+                    <a href="https://github.com/CodeStrong2023/ProyectoPythonJuniorTechTroopers" class="learn-more" target="_blank"><button class="btn btn-dark">Saber más</button></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--Contacto-->
     <center>
         <section class="contact-form-section" id="Contacto">
             <div class="form-container">
@@ -304,14 +345,14 @@
             </div>
         </section>
     </center>
-
+    <!--Footer-->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2d2d31">
         <div class="container-fluid" id="footer">
             <div class="row">
                 <footer>
                     <p>Mendoza, Argentina</p>
                     <legend></legend>
-                    <small>© JTT 2024</small>
+                    <small>Se reservan los derechos © JTT 2024</small>
                     <div>
                         <a href="mailto:juniortechtroopers@gmail.com" target="_blank"><i
                                 class="bi bi-envelope-check"></i></a>
@@ -324,7 +365,7 @@
             <div class="collapse navbar-collapse" id="navbarNav"></div>
         </div>
     </nav>
-
+    <!--Scripts-->
     <script src="script/audio.js"></script>
     <button id="audio-button" onclick="toggleAudio()">
         <i id="audio-icon" class="bi bi-play"></i>
