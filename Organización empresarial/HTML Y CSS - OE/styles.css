@@ -181,19 +181,15 @@ h1 {
 }
 
 /*Fin sección conocenos*/
-
+/*About us Sección*/
 .about-us-section {
   text-align: center;
-
-
   padding: 40px 20px;
   color: #fdf8f8;
-  /* Color del texto */
 }
 
 .about-us-section h2 {
   color: #fff3f3;
-  /* Color del texto del encabezado */
   margin-bottom: 20px;
   font-size: 28px;
   font-weight: 600;
@@ -216,18 +212,17 @@ h1 {
 
 .pillar {
   background-color: #fff;
-  /* Fondo blanco para las cajas */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 250px;
   flex: 1 1 250px;
   margin: 10px;
+  transition: transform 0.3s;
 }
 
 .pillar h3 {
   color: #333;
-  /* Color del texto del encabezado de las cajas */
   margin-bottom: 10px;
   font-size: 22px;
   font-weight: 600;
@@ -235,8 +230,19 @@ h1 {
 
 .pillar p {
   color: #666;
-  /* Color del texto del párrafo de las cajas */
   font-size: 16px;
+}
+
+.pillar i {
+  color:black;
+  font-size: 40px;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.pillar:hover i {
+  color:#1b8d1b;
+  transform: scale(1.3);
 }
 
 /*Seccción habilidades*/
