@@ -1,22 +1,6 @@
+/*Fuentes generales*/
 * {
   font-family: 'Poppins', sans-serif;
-}
-
-#Conocenos,
-h1 {
-  color: #ffffff;
-  text-align: center;
-}
-
-header {
-  max-width: 100%;
-  height: auto;
-  border-radius: 20px;
-  background-color: rgba(95, 95, 99, 0.521);
-  margin: auto;
-  padding: 28px;
-  border: 5px solid rgba(7, 59, 68, 0.651);
-  position: relative;
 }
 
 body {
@@ -28,14 +12,30 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
+  cursor: url('img/Cursor/sable.png'), auto;
+}
+/*Fin sección generales*/
+
+/*Sección header*/
+header {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  background-color: rgba(95, 95, 99, 0.521);
+  margin: auto;
+  padding: 28px;
+  border: 5px solid rgba(7, 59, 68, 0.651);
+  position: relative;
 }
 
+
+/*Banner*/
 #Banner {
   position: relative;
   height: 100vh;
   min-height: 450px;
   max-height: 1080px;
-  background: url('../img/Banner.jpg') no-repeat center center;
+  background: url('img/Banner.jpg') no-repeat center center;
   background-size: cover;
   padding: 15px;
   padding-top: 90px;
@@ -62,11 +62,20 @@ nav {
   color: #63a2d3;
 }
 
+
+
+
 /*Sección conocenos*/
 .row_2 {
   display: flex;
   flex-wrap: wrap;
   padding: 2em 1em;
+  text-align: center;
+}
+
+#Conocenos,
+h1 {
+  color: #ffffff;
   text-align: center;
 }
 
@@ -84,6 +93,7 @@ nav {
   transition: 0.3s;
   background-color: #ffffff;
   margin-top: 10px;
+  position: relative;
 }
 
 .card .img-container {
@@ -122,29 +132,51 @@ nav {
   color: #ffffff;
 }
 
+.social-icons {
+  display: none;
+  font-size: 25px;
+  margin-top: 1em;
+}
+
+.social-icons a {
+  color: #ffffff; /* Cambia este color según tu preferencia */
+  margin: 0 5px;
+  font-size: 1.9rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #121312; /* Cambia este color al que desees para el hover */
+}
+
+.card:hover .social-icons {
+  display: block;
+}
+
 .card:hover .img-container {
   transform: scale(1.15);
 }
 
 @media screen and (min-width: 768px) {
   section {
-    padding: 1em 7em;
+      padding: 1em 7em;
   }
 }
 
 @media screen and (min-width: 992px) {
   section {
-    padding: 1em;
+      padding: 1em;
   }
 
   .card {
-    padding: 5em 1em;
+      padding: 5em 1em;
   }
 
   .column {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
-    padding: 0 1em;
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      padding: 0 1em;
   }
 }
 
@@ -278,7 +310,7 @@ nav {
 }
 
 .project-box {
-  background-color: #1a1818; /* Fondo blanco para las cajas */
+  background-color: #1a1818; /* Fondo para las cajas */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -346,9 +378,7 @@ nav {
 
 .form-container {
   background-color: #131212;
-  /* Fondo oscuro para el contenedor */
-  color: #fff;
-  /* Texto blanco */
+  color: #ffffff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -359,12 +389,10 @@ nav {
 
 .form-container h2 {
   color: #fff;
-  /* Texto blanco para el encabezado */
 }
 
 .form-container fieldset {
   border: 1px solid #fff;
-  /* Bordes blancos para el fieldset */
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 10px;
@@ -372,7 +400,7 @@ nav {
 
 .form-container legend {
   color: #fff;
-  /* Texto blanco para el legend */
+  
 }
 
 .form-container label {
@@ -411,7 +439,7 @@ nav {
   background-color: #45a049;
 }
 
-
+/*Botón de audio*/
 #audio-button {
   position: fixed;
   bottom: 20px;
@@ -431,8 +459,12 @@ nav {
 
 #audio-button i {
   margin-right: 10px;
+  font-size: 25px;
+  margin-left: 10px;
 }
+/*Fin botón audio*/
 
+/*Top*/
 #top {
   position: relative;
   max-width: 100%;
@@ -497,12 +529,20 @@ figure iframe {
   font-size: 14px;
 }
 
-i {
-  color: #fff;
-  font-size: 25px;
-  margin-left: 10px;
+.footer-icons a {
+  color: #ffffff; /* Cambia este color según tu preferencia */
+  margin: 0 5px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
+.footer-icons a:hover {
+  color: #1b8d1b; /* Cambia este color al que desees para el hover */
+}
+
+
+/*Media querys*/
 @keyframes fadeIn {
   0% {
     opacity: 0;
