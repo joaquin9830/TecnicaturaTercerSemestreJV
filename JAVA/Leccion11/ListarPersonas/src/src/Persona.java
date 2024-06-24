@@ -55,5 +55,21 @@ public class Persona {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "id=" + id + ", nombre=" + nombre + ", tel=" + tel + ", email=" + email + '}';
+    }
+    
+    
+    
+
+    public static void main(String[] args) {
+        Persona persona1 = new Persona("Juan Perez", "345435", "jperez@gmail.com");
+        System.out.println("persona1 = " + persona1);
+    }
+    
+    
+    
     
 }
