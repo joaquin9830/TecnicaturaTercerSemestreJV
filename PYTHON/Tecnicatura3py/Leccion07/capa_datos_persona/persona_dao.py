@@ -1,6 +1,6 @@
-from LOGGIN.capa_datos_persona.Persona import Persona
-from LOGGIN.capa_datos_persona.conexion import Conexion
-from LOGGIN.capa_datos_persona.cursor_del_pool import CursorDelPool
+from capa_datos_persona.Persona import Persona
+from capa_datos_persona.conexion import Conexion
+from capa_datos_persona.cursor_del_pool import CursorDelPool
 from logger_base import log
 
 class PersonaDAO:
