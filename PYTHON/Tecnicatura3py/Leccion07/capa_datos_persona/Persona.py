@@ -1,6 +1,5 @@
 from logger_base import log
 
-
 class Persona:
     def __init__(self, id_persona=None, nombre=None, apellido=None, email=None):
         self._id_persona = id_persona
@@ -10,14 +9,12 @@ class Persona:
 
     def __str__(self):
         return f'''
-                Id persona: {self._id_persona},
-                Nombre: {self._nombre},
-                Apellido: {self._apellido},
-                Email: {self._email}
-            
-                '''
+            Id Persona: {self._id_persona},
+            Nombre: {self._nombre},
+            Apellido: {self._apellido}, 
+            Email: {self._email}
+        '''
 
-    # Métodos getter and setter
     @property
     def id_persona(self):
         return self._id_persona
@@ -52,9 +49,9 @@ class Persona:
 
 
 if __name__ == '__main__':
-    persona1 = Persona(1, 'Juan', 'Perez', 'jperez@mail.com')
+    persona1 = Persona(1, 'Juan', 'Perez', 'jperez@pmail.com')
     log.debug(persona1)
-    persona2 = Persona(nombre='Jose', apellido='Lopez', email='jose@mail.com')
+    persona2 = Persona(nombre='Jose', apellido='Lepez', email='ljose@mail.com')
     log.debug(persona2)
     persona1 = Persona(id_persona=1)
     log.debug(persona1)
